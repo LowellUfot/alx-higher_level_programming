@@ -16,7 +16,7 @@ int check_cycle(listint_t *list)
 
 	while (check1 && check2)
 	{
-		if (check2->next == NULL)
+		if (check1->next == NULL)
 			return (0);
 		check1 = check1->next;
 		check2 = check2->next->next;
