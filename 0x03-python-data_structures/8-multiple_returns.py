@@ -4,7 +4,7 @@ def multiple_returns(sentence):
     firstLetter = sentence[0]
 
     if length == 0:
-        return (length, None)
+        firstLetter = None
 
     tupleReturn = length, firstLetter
     return tupleReturn
