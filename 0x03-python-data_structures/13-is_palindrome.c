@@ -52,7 +52,7 @@ int is_palindrome(listint_t **head)
 	listint_t **array_of_list;
 	listint_t *tmp;
 
-	if (head && *head)
+	if (*head)
 	{
 		n = list_len(*head);
 		array_of_list = malloc(n * sizeof(listint_t *));
