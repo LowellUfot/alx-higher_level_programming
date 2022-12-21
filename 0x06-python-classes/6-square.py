@@ -26,11 +26,7 @@ class Square:
 
     @property
     def size(self):
-        """
-        Args:
-        size (int): The size of ``Square``.
-            Default value is 0.
-
+        """Size as the len of a side of a square
         Raises:
             TypeError: If ``size`` is not an integer
             ValueError: If ``size`` < 0
@@ -41,10 +37,9 @@ class Square:
     def size(self, value):
         if isinstance(value, int) is not True:
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        self.__size = value
 
     @property
     def position(self):
