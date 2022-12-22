@@ -10,7 +10,7 @@ class Square:
     Attributes:
         size (int): This is the size of ``Square``.
     """
-    def __init__(self, size=0, postion=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Class initalisation definition.
 
         Args:
