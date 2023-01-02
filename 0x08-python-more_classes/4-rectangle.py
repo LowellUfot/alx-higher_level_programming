@@ -77,5 +77,4 @@ class Rectangle:
         return hsh
 
     def __repr__(self):
-        """defines __repr__ method"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
