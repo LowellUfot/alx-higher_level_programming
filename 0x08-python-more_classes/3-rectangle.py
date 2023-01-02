@@ -65,7 +65,7 @@ class Rectangle:
             return 0
         return 2 * (self.width + self.height)
 
-    def __str__(self) -> str
+    def __str__(self) -> str:
         """defines __str__method"""
         hsh = ""
         if self.width == 0 or self.height == 0:
