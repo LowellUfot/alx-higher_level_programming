@@ -54,13 +54,13 @@ class Rectangle:
         Returns:
             int: the area of Reactangle
         """
-        return width * height
+        return self.width * self.height
 
     def perimeter(self):
         """Calculates the perimeter of the Rectangle
         Returns:
             int: the perimeter of Rectangle
         """
-        if width = 0 or height = 0:
+        if self.width == 0 or self.height == 0:
             return 0
-        return 2 * (width + height)
+        return 2 * (self.width + self.height)
