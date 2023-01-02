@@ -54,8 +54,6 @@ class Rectangle:
         Returns:
             int: the area of Reactangle
         """
-        if width = 0 or height = 0:
-            return 0
         return width * height
 
     def perimeter(self):
