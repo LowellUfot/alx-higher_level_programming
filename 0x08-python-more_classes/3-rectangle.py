@@ -68,6 +68,8 @@ class Rectangle:
     def __str__(self):
         """defines __str__method"""
         hsh = ""
+        if self.width == 0 or self.height == 0:
+            return hsh
         for i in range(self.height):
             for j in range(self.weight):
                 hsh += "#"
