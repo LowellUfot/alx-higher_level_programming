@@ -73,5 +73,6 @@ class Rectangle:
         for i in range(self.height):
             for j in range(self.weight):
                 hsh += "#"
-            hsh += "\n"
+            if i < self.height - 1:
+                hsh += "\n"
         return hsh
