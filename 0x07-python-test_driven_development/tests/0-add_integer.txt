@@ -32,6 +32,7 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 Test Case 6 - Adding an integer and non integer: a = 4, b = (5,)
->>> Traceback (most recent call last):
+>>> add_integer(4, (5,))
+Traceback (most recent call last):
 ...
 TypeError: b must be an integer
