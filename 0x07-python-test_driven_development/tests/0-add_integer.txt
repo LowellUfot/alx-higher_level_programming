@@ -36,3 +36,21 @@ Test Case 6 - Adding an integer and non integer: a = 4, b = (5,)
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
+
+Test Case 7 - Adding integer and None: a = 5, b = None
+>>> add_integer(5, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Test Case 8 - Adding None: a = None
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Test Case 9 - Adding two strings: a = "one", b = "five"
+>>> add_integer("one", "five")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
