@@ -1,0 +1,19 @@
+Test cases for 2-matrix_divided.py module
+=========================================
+
+Usage
+=====
+
+Import the "matrix_divided" function from the "2-matrix_divided" module
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test Case 1: matrix = [[1, 2, 3], [4, 5, 6]], div = 2
+>>> matrix_divided(([[1, 2, 3], [4, 5, 6]]), 2)
+[[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
+
+
+Test Case 2: matrix = [[1, 2, 3], [4, 5, 6]], div = 0
+>>> matrix_divided(([[1, 2, 3], [4, 5, 6]]), 0)
+Traceback(most recent call last):
+...
+ZeroDivisionError: division by zero
