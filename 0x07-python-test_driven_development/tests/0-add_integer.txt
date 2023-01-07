@@ -59,4 +59,4 @@ Test Case 10 - adding infinity numbers: a 10e989898, b = 99e999999
 >>> add_integer(10e989898, 99e999999)
 Traceback (most recent call last):
 ...
-OverflowError: cannot convert float integer to infinity
+OverflowError: cannot convert float infinity to integer
