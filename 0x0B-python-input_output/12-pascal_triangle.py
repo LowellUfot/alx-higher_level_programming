@@ -8,7 +8,7 @@ def pascal_triangle(n):
     Return:
         list of list of integers representing the triangle
     """
-    if n < 0:
+    if n <= 0:
         return []
 
     triangles = [[1]]
