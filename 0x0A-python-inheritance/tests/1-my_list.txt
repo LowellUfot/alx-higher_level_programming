@@ -15,8 +15,12 @@ Test Case 1: Project Example
 >>> my_list.append(2)
 >>> my_list.append(3)
 >>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 
 
 Test Case 2: Repeated numbers
@@ -28,10 +32,13 @@ Test Case 2: Repeated numbers
 >>> my_list.append(5)
 >>> my_list.print_sorted()
 [1, 1, 1, 4, 5]
+>>> print(my_list)
+[1, 4, 1, 1, 5]
 
 
 Test Case 3: Empty list
->>> my_list = MyList()
+>>> a = []
+>>> my_list = MyList(a)
 >>> my_list.print_sorted()
 []
 
@@ -64,3 +71,18 @@ Test Case 6: Negative Numbers
 >>> my_list.append(0)
 >>> my_list.print_sorted()
 [-7, -6, -1, 0, 1, 25]
+
+
+
+Test Case 7: Pass list to MyList()
+>>> a = [1, 5, 2]
+>>> my_list = MyList(a)
+>>> my_list.print_sorted()
+[1, 2, 5]
+
+
+Test Case 8: Only one element
+>>> my_list = MyList()
+>>> my_list.append(5)
+>>> my_list.print_sorted()
+[5]
