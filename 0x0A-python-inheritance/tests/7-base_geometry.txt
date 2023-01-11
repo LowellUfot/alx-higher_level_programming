@@ -71,3 +71,16 @@ Test Case 7: Too many argument to integer_validator
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+
+
+Test Case 8: Non-integer as value
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("num", (5,))
+Traceback (most recent call last):
+...
+TypeError: num must be an integer
+>>> bg.integer_validator("num", 2.86)
+Traceback (most recent call last):
+...
+TypeError: num must be an integer
