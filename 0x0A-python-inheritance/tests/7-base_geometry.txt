@@ -1,0 +1,13 @@
+Tests for the 7-base_geometry.py module
+=======================================
+
+Importing the 7-base_geometry.py module
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+Test Case 1: name = str, value = int > 0
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+
+>>> bg.integer_validator("width", 89)
+
