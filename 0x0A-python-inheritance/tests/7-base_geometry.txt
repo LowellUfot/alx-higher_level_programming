@@ -84,3 +84,21 @@ TypeError: num must be an integer
 Traceback (most recent call last):
 ...
 TypeError: num must be an integer
+
+Test Case 9: Checking for module docstring:
+>>> m = __import__("7-base_geometry").__doc__
+>>> len(m) > 1
+True
+
+Test Case 10: Checking for class docstring:
+>>> c = __import__("7-base_geometry").BaseGeometry.__doc__
+>>> len(c) > 1
+True
+
+Test Case 11: Checking for method docstring:
+>>> met1 = __import__("7-base_geometry").BaseGeometry.area.__doc__
+>>> len(met1) > 1
+True
+>>> met2 = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+>>> len(met2) > 1
+True
