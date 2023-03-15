@@ -7,7 +7,7 @@ const myNum = +argv[2];
 // print process.argv
 if (isNaN(myNum)) {
   console.log('Not a number');
-} else if (typeof (myNum) === "number") {
+} else if (typeof (myNum) === 'number') {
   console.log(`My number: ${myNum}`);
 } else {
   console.log('Not a number');
