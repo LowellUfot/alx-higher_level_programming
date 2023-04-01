@@ -13,7 +13,7 @@ if __name__ == "__main__":
         payload = {'q': sys.argv[1]}
     else:
         payload = {'q': ""}
-    r = requests.get('http://0.0.0.0:5000/search_user', data=payload)
+    r = requests.post('http://0.0.0.0:5000/search_user', data=payload)
     try:
         r_json = r.json()
         if r_json != {}:
