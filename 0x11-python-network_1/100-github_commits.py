@@ -15,7 +15,7 @@ if __name__ == "__main__":
     r = requests.get(git_api)
     r_json = r.json()
     try:
-        for i in rainge(10):
+        for i in range(10):
             print('{}: {}'.format(
                 r_json[i].get('sha'),
                 r_json[i].get('commit').get('author').get('name')))
