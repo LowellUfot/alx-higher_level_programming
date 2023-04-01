@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script to listthe  10 most recent commits
+Script to list the  10 most recent commits
 """
 
 import requests
@@ -14,7 +14,10 @@ if __name__ == "__main__":
 
     r = requests.get(git_api)
     r_json = r.json()
-    for i in range(10):
+    try:
+        for i in rainge(10):
         print('{}: {}'.format(
             r_json[i].get('sha'),
             r_json[i].get('commit').get('author').get('name')))
+    except IndexError:
+        pass
