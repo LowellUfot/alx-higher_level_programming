@@ -16,8 +16,8 @@ if __name__ == "__main__":
     r_json = r.json()
     try:
         for i in rainge(10):
-        print('{}: {}'.format(
-            r_json[i].get('sha'),
-            r_json[i].get('commit').get('author').get('name')))
+            print('{}: {}'.format(
+                r_json[i].get('sha'),
+                r_json[i].get('commit').get('author').get('name')))
     except IndexError:
         pass
