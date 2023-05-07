@@ -2,7 +2,11 @@
 const process = require('process');
 const argv = process.argv.slice(2);
 
-console.log(secondBiggest(argv));
+if (isNaN(argv[2])) {
+  console.log(0);
+} else {
+  console.log(secondBiggest(argv));
+}
 
 function secondBiggest (arr) {
   if (arr.length <= 1) {
@@ -10,8 +14,8 @@ function secondBiggest (arr) {
     return;
   }
 
-  let biggest = Number.MIN_SAFE_INTEGER;
-  let secondBiggest = Number.MIN_SAFE_INTEGER;
+  let biggest = 0;
+  let secondBiggest = 0;
 
   for (let i = 0; i < arr.length; i++) {
     const num = parseInt(arr[i]);
