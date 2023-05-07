@@ -2,7 +2,7 @@
 const process = require('process');
 const argv = process.argv.slice(2);
 
-if (isNaN(argv[2])) {
+if (isNaN(argv[0])) {
   console.log(0);
 } else {
   console.log(secondBiggest(argv));
