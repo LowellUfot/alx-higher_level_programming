@@ -1,10 +1,10 @@
 #!/usr/bin/node
 const process = require('process');
-const argv = process.argv.slice(2);
 
-if (isNaN(argv[0])) {
+if (process.argv.length <= 3) {
   console.log(0);
 } else {
+  const argv = process.argv.slice(2);
   console.log(secondBiggest(argv));
 }
 
