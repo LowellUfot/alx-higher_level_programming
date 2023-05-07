@@ -4,7 +4,7 @@ const argv = process.argv.slice(2);
 
 console.log(secondBiggest(argv));
 
-function secondBiggest(arr) {
+function secondBiggest (arr) {
   if (arr.length <= 1) {
     console.log(0);
     return;
