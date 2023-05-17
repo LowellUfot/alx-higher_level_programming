@@ -7,9 +7,9 @@ class Square extends SquareClass {
   }
 
   charPrint (c) {
-    for (let i = 0; i < this.size; i++) {
+    for (let i = 0; i < this.height; i++) {
       let res = '';
-      for (let j = 0; j < this.size; j++) {
+      for (let j = 0; j < this.width; j++) {
         if (c !== undefined) {
           res += c;
         } else {
